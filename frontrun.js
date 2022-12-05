@@ -12,7 +12,7 @@ const PROJECT_ID = require("./key.js")
 const web3 = new Web3(new Web3.providers.HttpProvider(`https://${NETWORK}.g.alchemy.com/v2/${PROJECT_ID}`));
 const NETWORK_URL = `https://goerli.infura.io/v3/`;
 
-const QUICKNODE_HTTP_ENDPOINT = "https://eth-goerli.g.alchemy.com/v2/0wp9jOR9zJMkKs6HJ_m8ksTZs-ivy7q3"
+const QUICKNODE_HTTP_ENDPOINT = `https://eth-goerli.g.alchemy.com/v2/${PROJECT_ID}`
 let provider = new ethers.providers.getDefaultProvider(QUICKNODE_HTTP_ENDPOINT)
 
 // Uniswap 合约地址
